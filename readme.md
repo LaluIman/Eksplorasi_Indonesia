@@ -15,8 +15,7 @@ pengguna dapat mencari informasi budaya secara mendetail yang diambil secara din
 # Klon Repository:
 
 
-git clone https://github.com/usernamekamu/eksplorasi-budaya-nusantara.git
-cd eksplorasi-budaya-nusantara
+git clone https://github.com/LaluIman/Eksplorasi_Indonesia.git
 
 Buka Proyek:
 
@@ -26,9 +25,3 @@ Eksplorasi:
 Jelajahi berbagai bagian di halaman utama.
 Klik tombol "Eksplorasi sekarang" untuk mengunjungi halaman eksplorasi.
 Gunakan kolom pencarian di halaman eksplorasi untuk mencari informasi budaya tertentu.
-Kustomisasi:
-
-Proyek ini sepenuhnya bisa dikustomisasi. Jangan ragu untuk memodifikasi file HTML, CSS, atau JavaScript untuk menambahkan fitur baru atau mengubah desain sesuai kebutuhan kamu.
-Pengujian Responsif:
-
-Uji responsifitas website dengan mengubah ukuran jendela browser atau menggunakan Chrome DevTools untuk mensimulasikan berbagai perangkat.
