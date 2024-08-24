@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #E6292D;
+    --white: #fff;
+    --secondary:#b70000 ;
+}
+
+section{
+    padding: 5%;
+}
+
+.hero{
+    background-color: var(--main-color);
+    height: 73vh;
+    width: auto;
+    display: flex;
+    background-image: url('img/bghero2.png'); 
+    background-position: right bottom;
+    background-size: 70%; 
+    background-repeat: no-repeat; 
+}
+
+.hero .hero-text{
+    padding: 40px 0 10px 0;
+}
+
+.hero .heading{
+    font-size: 50px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.hero .title{
+    color: var(--white);
+    font-size: 130px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.hero .title .One{
+    color: var(--secondary);
+}
+
+.btn{
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 15px 10px;
+    border-radius: 15px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.hero .hero-image {
+    flex-grow: 1; 
+  }
+
+.hero .hero-image .bottom{
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    bottom: 0; 
+}
+
+.hero .hero-image .top{
+    position: relative;
+    z-index: 10;
+    image-resolution: 300dpi;
+}
+
+.about{
+    height: 100vh;
+    height: 73vh;
+    width: auto;
+    display: flex;
+    margin: 5rem 0;
+}
+
+.about-img{
+    margin: 1rem;
+}
+
+.about-text{
+    width: 50%;
+    margin: 2rem;
+}
+
+.about-text .about-title{
+    font-size: 50px;
+    margin: 3rem 0 3rem 0;
+}
+
+.about-text .description{
+    font-size: 20px;
+}
+
+.eksplor{
+    background-image: url(img/indohome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem 0;
+}
+
+.eksplor-container {
+    background-color: rgba(196, 196, 196, 0.676);
+    backdrop-filter: blur(5px);
+    width: 100%;  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 50px;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    z-index: 1;
+  }
+  
+
+.eksplor-text .eksplor-title{
+    margin: 5rem;
+    font-size: 50px;
+}
+
+.search{
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-title{
+    color: var(--white);
+    font-size:3rem;
+    margin: 20px 0;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 100%; 
+    padding: 25px; 
+    margin: 1rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    height: 60px; 
+  }
+  
+  .search-icon {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--white);
+    font-weight: 800;
+    border: none;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s ;
+  }
+
+  .search-icon:hover{
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .result-item{
+    padding: 20px;
+    background-color: #ededed;
+    border-radius: 10px;
+  }
+
+  .result-item img{
+    display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px; 
+  height: 200px;
+  object-fit: cover;
+  }
+
+  .result-item h3{
+    font-size: 1.5rem;
+    padding: 20px 0;
+  }
+
+  .result-item button{
+    padding: 20px 0;
+    border: none;
+  }
+
+  footer h3{
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 22px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .hero .hero-text {
+        text-align: left;
+    }
+
+    .about {
+        flex-direction: row;
+    }
+
+    .about-img, .about-text {
+        width: 50%;
+    }
+
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero .heading {
+        font-size: 4rem;
+    }
+
+    .hero .title {
+        font-size: 8rem;
+    }
+
+    .about-text .about-title {
+        font-size: 4rem;
+        text-align: left;
+    }
+
+    .about-text .description {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .results {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
